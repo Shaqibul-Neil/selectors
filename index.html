@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS SELECTORS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--child selector-->
+	<div class="child">
+		<p>Lorem Ipsum is simply dummy text</p>
+		<p>Lorem Ipsum has been the industry</p>
+	</div>
+	<!--sibling selector modifies the one directly after div element-->
+	<div class="sibling">
+		<p>Contrary to popular belief, Lorem Ipsum</p>
+		<p>There are many variations of passages of Lorem Ipsum</p>
+	</div>
+	<p>There are many variations of passages </p>
+	<p> words, consectetur, from a Lorem I</p>
+	<div class="sibling">
+		<h1> All the Lorem Ipsum generators</h1>
+		<p>through the cites of the word </p>
+	</div>
+		<p>odel text, and a search for 'lor</p>
+		<p>ave suffered alteration in som</p>
+	<!--general sibling seletor selects all the p after the div element-->
+	<div class="general">
+		<p> not simply random text. It has roots in</p>
+	</div>
+		<p>going to use a passage of Lorem</p>
+		<p>y, making this the first true generator </p>
+		<h2>nd going through the cites</h2>
+		<code>. Various versions have ev</code>
+		<samp>LIMITED</samp>
+		<p>ere isn't anything emb</p>
+	<!--pseudoclass-->
+	<div class="links">
+		<a href="#" target="_blank">ABC</a>
+		<a href="#" target="_blank">DEF</a>
+		<a href="#" target="_blank">GHI</a>
+		<a href="#" target="_blank">JKL</a>
+		<a href=https://www.w3schools.com/css/css_pseudo_classes.asp>CSS Pseudo Class</a>
+		<p>click on the links and hold the mouse button down before releasing it.</p>
+	</div>
+	<!--tooltip-->
+	<div class="tooltip">
+		Hover here to sign up
+		<p>Sign Up</p>
+	</div>
+	<!--first child-->
+	<div class="first_i">
+		<p>sfsg <i>ddfd</i> fsdfd<i> sdadw</i></p>
+		<p>sddddd <i>ssddwdw</i> aseeedfd<i> wwweferg</i></p>
+	</div>
+	<div class="all">
+		<p>sfsg <i>ddfd</i> fsdfd<i> sdadw</i></p>
+		<p>sddddd <i>ssddwdw</i> aseeedfd<i> wwweferg</i></p>
+	</div>
+	<!--pseudo-element-->
+	<div class="first-line">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+	</div>
+	<div class="first-letter">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+	</div>
+	<div class="together">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+	</div>
+	<!--before-->
+	<div class="before">
+		<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</h2>
+	</div>
+	<!--after-->
+	<div class="after">
+		<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</h2>
+	</div>
+	<!--marker-->
+	<div class="marker">
+		<ul>
+			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+		<ol>
+			<li>First</li>
+  			<li>Second</li>
+  			<li>Third</li>
+		</ol>
+	</div>
+	<!--selection-->
+	<div class="selection">
+		<h2>Select some of the below text</h2>
+		<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</h3>
+	</div>
+	<!--spelling error-->
+	<div class="error">
+		<p contenteditable="true" spellcheck="true">This is a praggagraph. It is editable. Try to change the text.</p>
+	</div>
+	<!--placeholder-->
+	<div class="place">
+		<input type="text" name="" placeholder="write your name">
+		<textarea placeholder="write a comment..." cols="150" rows="5"></textarea>
+	</div>
+	<div class="space">
+		<p>
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		<p>
+	</div>
+	<!--file selector-->
+	<div class="file">
+		<label for="fileupload">Upload file:</label>
+		<input type="file" name="" id="fileupload">
+		<input type="text" name="" id="f.name" placeholder="first name">
+		<input type="text" name="" id="f.name" placeholder="first name">
+		<input type="text" name="" id="f.name" placeholder="first name">
+	</div>
+	<!--attribute selector-->
+	<div class="images">
+		<img src="blue.jpg" alt="blue" title="logo">
+		<img src="blue.jpg" alt="blue" title="logo">
+		<img src="blue.jpg" alt="blue" title="logo">
+		<img src="blue.jpg" alt="blue" title="nologo">
+	</div>
+	<div class="att">
+		<p>
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		<p>
+	</div>
+	<div class="ant">
+		<p>
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.
+		<p>
+	</div>
+	<div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+
+<!--at rules-->
+
+	<div class="parent">
+		<div class="children">
+			<h4>resize the browser</h4>
+			<p>	This text is really long and the height of its container is only 600 pixels. Therefore</p>
+		</div>
+	</div>
+	<div class="father">
+		<div class="childs">
+			<h4>resize the browser</h4>
+			<p>	This text is really long and the height of its container is only 600 pixels. Therefore</p>
+		</div>
+	</div>
+<!--counter style-->
+	<div class="cstyle">
+		<ul>
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+ 			<li>Soda</li>
+		</ul>
+	</div>
+	<div class="a_style">
+		<ol>
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+ 			<li>Soda</li>
+		</ol>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/*attribute selectors*/
+a[target]{
+	background-color: yellow;
+}
+[title~="logo"]{
+	border: 5px solid red;
+	opacity: 0.5;
+}
+[title~="logo"]:hover{
+	opacity: 1;
+}
+[title~="nologo"]{
+	border: 10px solid;
+}
+[class|="child"]{
+	background-color: yellow;
+}
+[class|="sibling"]{
+	background-color: red;
+}
+div[class*="att"]{
+	background-color: red;
+}
+div[class^="ant"]{
+	background-color: yellow;
+}
+input[type="text"]{
+	width: 200px;
+	min-height: 100px;
+	background-color: yellow;
+	display: block;
+
+}
+/*child selector*/
+.child > p{
+	color: red;
+}
+/*sibling selector*/
+.sibling + p{
+	color: blue;
+}
+/*general sibling selector*/
+.general ~ p{
+	color: green;
+}
+/*--pseudoclass*/
+.links a:link{
+	color: red;
+}
+.links a:visited{
+	color: green;
+}
+.links a:hover{
+	color: yellow;
+}
+.links a:active{
+	color: aqua;
+}
+/*tooltip*/
+.tooltip p{
+	display: none;
+	background-color: red;
+	padding: 10px;
+}
+.tooltip:hover p{
+	display: block;
+}
+/*firts child*/
+.first_i p i:first-child{
+	color: tomato;
+}
+.all p:first-child i{
+	color: aqua;
+}
+/*--pseudo-element*/
+.first-line p::first-line{
+	font-variant: small-caps;
+	color: red;
+	background-color: yellow;
+	text-decoration: underline;
+	word-spacing: 1px;
+	line-height: 50px;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+}
+.first-letter p::first-letter{
+	font-size: xx-large;
+	color: green;
+	background-color: yellow;
+	text-transform: lowercase;
+	text-decoration: underline;
+	margin: 10px;
+	padding: 10px;
+    border: 2px solid red;
+}
+.together p::first-letter{
+	font-size: 200%;
+	color: aqua;
+	margin: 2px;
+	padding: 3px;
+}
+.together p::first-line{
+	font-size: 150%;
+	color: violet;
+	letter-spacing: 2px;
+}
+/*before*/
+.before h2::before{
+	content: url(blue.jpg);
+}
+/*after*/
+.after h2::after{
+	content: url(blue.jpg);
+}
+/*marker*/
+.marker ::marker{
+	content: "#";
+	font-size: 30px;
+	color: blue;
+}
+/*selection*/
+.selection h3::selection{
+	color: #f519f5;
+	background-color: yellow;
+	text-decoration: underline;
+	text-shadow: -3px -5px 2px #5a2f2f;
+}
+/*spelling error*/
+.error p::spelling-error{
+	color: green;
+	background-color: yellow;
+	cursor: pointer;
+	caret-color: aqua;
+	outline: green solid 5px;
+	text-emphasis-color: red;
+	text-shadow: 2px 2px 2px black;
+}
+/*placeholder*/
+.place ::placeholder{
+	color: red;
+	opacity: 0.8;
+}
+.space{
+	background-color: aqua;
+	height: 200px;
+	width: 200px;
+}
+.space p{
+	white-space: pre;
+}
+/*file selector*/
+.file input::file-selector-button{
+	background-color: red ;
+	padding: 10px;
+	border: 3px solid;
+	border-radius: 5px;
+}
+.file input::file-selector-button:hover{
+	background-color: aqua;
+	cursor: pointer;
+}
+#overflowTest{
+	width: 20%;
+	height: 200px;
+	overflow: scroll;
+	border: 5px solid;
+}
+/*at rules*/
+.parent{
+	container-name: mycontainer;
+	container-type: inline-size;
+}
+/*add styles to container if the screen is less than 600px wide*/
+@container mycontainer (width < 600px) {
+	.children{
+		width: 40%;
+		border: 2px solid darkred;
+		background-color: yellow;
+	}
+}
+.father{
+	container-name: my_container;
+	container-type: inline-size;
+}
+@container my_container (width<800px){
+	.childs{
+		width: 50%;
+		background-color: salmon;
+		border: 2px solid red;
+	}
+}
+@counter-style star-list{
+	system: cyclic; /*repeats the item cyclically*/
+	symbols: "⭐" "🌟" "✨"; /*the custom symbol to use*/
+	suffix: ""; /*adds space after the symbol*/
+}
+ul{
+	list-style: star-list; /*apply the custom style*/
+}
+@counter-style new-list{
+	system: cyclic;
+	symbols: "\261D""\263A";
+	suffix: "";
+}
+ol{
+	list-style: new-list;
+}
